@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kudva Playbook</title>
+    <style>
+        :root {
+            --primary-navy: #0b132b;
+            --secondary-navy: #1c2541;
+            --accent-gold: #d4af37;
+            --gold-hover: #e6c547;
+            --light-bg: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --border-color: #cbd5e1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 50px 40px;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(11, 19, 43, 0.08);
+            border-top: 6px solid var(--accent-gold);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .logo-title span {
+            color: var(--accent-gold);
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .intro-paragraph {
+            text-align: justify;
+            font-size: 1.15rem;
+            color: var(--text-main);
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .scope-section {
+            margin-bottom: 45px;
+        }
+
+        .scope-section h3 {
+            color: var(--primary-navy);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .scope-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+            font-size: 0.95rem;
+            color: #475569;
+            background: #f8fafc;
+            padding: 24px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .scope-grid div {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .scope-grid div::before {
+            content: "•";
+            color: var(--accent-gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .links-section h3 {
+            color: var(--primary-navy);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .nav-link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 20px 26px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--primary-navy);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.25s ease-in-out;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .nav-link-card:hover {
+            border-color: var(--accent-gold);
+            background: #fffdf4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.18);
+            color: var(--secondary-navy);
+        }
+
+        .nav-link-card span {
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            transition: transform 0.2s ease;
+        }
+
+        .nav-link-card:hover span {
+            transform: translateX(4px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 30px 20px;
+            }
+
+            .logo-title {
+                font-size: 2rem;
+            }
+
+            .nav-link-card {
+                font-size: 1rem;
+                padding: 16px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Branding & Header -->
+        <header>
+            <h1 class="logo-title">The Kudva <span>Playbook</span></h1>
+            <div class="tagline">Repositories of Information & Knowledge for Young Professionals</div>
+        </header>
+
+        <!-- Opening Content -->
+        <p class="intro-paragraph">
+            Welcome to <strong>The Kudva Playbook</strong>—a premier intellectual repository meticulously structured for ambitious young professionals. Here, you will discover highly curated, deeply researched, and rigorously worked-out frameworks engineered for seamless practical execution. We bridge foundational theory with real-world mastery, empowering you to navigate complex professional, financial, and analytical landscapes with absolute confidence and strategic precision.
+        </p>
+
+        <!-- Core Scope & Disciplines -->
+        <div class="scope-section">
+            <h3>Core Disciplines & Scope</h3>
+            <div class="scope-grid">
+                <div>English Literature</div>
+                <div>Science & Mathematics</div>
+                <div>Psychology</div>
+                <div>World History</div>
+                <div>Economy & Finance</div>
+                <div>Wealth Creation</div>
+                <div>Professional Development</div>
+            </div>
+        </div>
+
+        <!-- Navigation & Button Cards -->
+        <div class="links-section">
+            <h3>Explore Core Repositories</h3>
+            <div class="nav-links">
+                <a href="pattern-recognition.html" class="nav-link-card">
+                    A) Pattern Recognition — Your Sixth Sense
+                    <span>&rarr;</span>
+                </a>
+                <a href="evolution-of-human-wealth.html" class="nav-link-card">
+                    B) Evolution of Human Wealth
+                    <span>&rarr;</span>
+                </a>
+                <a href="kudva-quant-engine.html" class="nav-link-card">
+                    C) Kudva Quant Engine
+                    <span>&rarr;</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2026 The Kudva Playbook. Designed for excellence and practical mastery.
+        </footer>
+    </div>
+
+</body>
+</html>
